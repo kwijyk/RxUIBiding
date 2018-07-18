@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A01FE9D5C97B363C02EB23F /* Pods_RxBindUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6222E2243007F90F06A07C2D /* Pods_RxBindUI.framework */; };
 		C5ABF7DF20FE168000D171F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */; };
 		C5ABF7E120FE168000D171F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7E020FE168000D171F8 /* ViewController.swift */; };
 		C5ABF7E420FE168000D171F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E220FE168000D171F8 /* Main.storyboard */; };
 		C5ABF7E620FE168000D171F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E520FE168000D171F8 /* Assets.xcassets */; };
 		C5ABF7E920FE168000D171F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E720FE168000D171F8 /* LaunchScreen.storyboard */; };
+		C5ABF7F120FF14DC00D171F8 /* UIBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107B248269CB6B407E3AA0E5 /* Pods-RxBindUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBindUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxBindUI/Pods-RxBindUI.release.xcconfig"; sourceTree = "<group>"; };
+		6222E2243007F90F06A07C2D /* Pods_RxBindUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBindUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF67C9A3D815956844DC201A /* Pods-RxBindUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBindUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxBindUI/Pods-RxBindUI.debug.xcconfig"; sourceTree = "<group>"; };
 		C5ABF7DB20FE168000D171F8 /* RxBindUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxBindUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5ABF7E020FE168000D171F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C5ABF7E520FE168000D171F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5ABF7E820FE168000D171F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5ABF7EA20FE168000D171F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBindingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A01FE9D5C97B363C02EB23F /* Pods_RxBindUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140E5924803BCD99F0CEE287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6222E2243007F90F06A07C2D /* Pods_RxBindUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		991DC063B31E8CCFA0DA4180 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF67C9A3D815956844DC201A /* Pods-RxBindUI.debug.xcconfig */,
+				107B248269CB6B407E3AA0E5 /* Pods-RxBindUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C5ABF7D220FE168000D171F8 = {
 			isa = PBXGroup;
 			children = (
 				C5ABF7DD20FE168000D171F8 /* RxBindUI */,
 				C5ABF7DC20FE168000D171F8 /* Products */,
+				991DC063B31E8CCFA0DA4180 /* Pods */,
+				140E5924803BCD99F0CEE287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */,
 				C5ABF7E020FE168000D171F8 /* ViewController.swift */,
+				C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */,
 				C5ABF7E220FE168000D171F8 /* Main.storyboard */,
 				C5ABF7E520FE168000D171F8 /* Assets.xcassets */,
 				C5ABF7E720FE168000D171F8 /* LaunchScreen.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5ABF7ED20FE168000D171F8 /* Build configuration list for PBXNativeTarget "RxBindUI" */;
 			buildPhases = (
+				4E88D1C271F61350416B4E27 /* [CP] Check Pods Manifest.lock */,
 				C5ABF7D720FE168000D171F8 /* Sources */,
 				C5ABF7D820FE168000D171F8 /* Frameworks */,
 				C5ABF7D920FE168000D171F8 /* Resources */,
+				A4B1C2A558062BBD39C08DF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E88D1C271F61350416B4E27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxBindUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B1C2A558062BBD39C08DF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxBindUI/Pods-RxBindUI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxBindUI/Pods-RxBindUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5ABF7D720FE168000D171F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C5ABF7E120FE168000D171F8 /* ViewController.swift in Sources */,
+				C5ABF7F120FF14DC00D171F8 /* UIBindingViewController.swift in Sources */,
 				C5ABF7DF20FE168000D171F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +349,7 @@
 		};
 		C5ABF7EE20FE168000D171F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF67C9A3D815956844DC201A /* Pods-RxBindUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +368,7 @@
 		};
 		C5ABF7EF20FE168000D171F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107B248269CB6B407E3AA0E5 /* Pods-RxBindUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

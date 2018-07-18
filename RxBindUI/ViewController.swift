@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var button: UIButton!
+    
+    let disposeBag = DisposeBag()
+    
+    let textFieldText = BehaviorRelay(value: "Hey")
+    let buttonSubject = PublishSubject<String>()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        textField.rx.text.orEmpty.bind(to: textFieldText).disposed(by: disposeBag)
+        textFieldText.asObservable().subscribe(onNext: {
+            print($0)
+        }).disposed(by: disposeBag)
+        
+        button.rx.tap.map{ "Heloo" }.bind(to: buttonSubject).disposed(by: disposeBag)
+        buttonSubject.subscribe(onNext: {
+            print($0)
+        }).disposed(by: disposeBag)
+        
+        textField.rx.text.orEmpty.bind(onNext: {
+            print($0)
+        }).disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
