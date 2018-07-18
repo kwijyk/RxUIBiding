@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class PropertyBindingViewController: UIViewController {
     
     @IBOutlet private weak var textField: UITextField!
     @IBOutlet private weak var button: UIButton!

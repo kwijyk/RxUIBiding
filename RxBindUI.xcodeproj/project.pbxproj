@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4A01FE9D5C97B363C02EB23F /* Pods_RxBindUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6222E2243007F90F06A07C2D /* Pods_RxBindUI.framework */; };
 		C5ABF7DF20FE168000D171F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */; };
-		C5ABF7E120FE168000D171F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7E020FE168000D171F8 /* ViewController.swift */; };
+		C5ABF7E120FE168000D171F8 /* PropertyBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7E020FE168000D171F8 /* PropertyBindingViewController.swift */; };
 		C5ABF7E420FE168000D171F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E220FE168000D171F8 /* Main.storyboard */; };
 		C5ABF7E620FE168000D171F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E520FE168000D171F8 /* Assets.xcassets */; };
 		C5ABF7E920FE168000D171F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ABF7E720FE168000D171F8 /* LaunchScreen.storyboard */; };
 		C5ABF7F120FF14DC00D171F8 /* UIBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */; };
+		C5ABF7F320FF68DE00D171F8 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F220FF68DE00D171F8 /* Food.swift */; };
+		C5ABF7F520FF6B5300D171F8 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F420FF6B5300D171F8 /* RxTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +24,14 @@
 		AF67C9A3D815956844DC201A /* Pods-RxBindUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBindUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxBindUI/Pods-RxBindUI.debug.xcconfig"; sourceTree = "<group>"; };
 		C5ABF7DB20FE168000D171F8 /* RxBindUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxBindUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5ABF7E020FE168000D171F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5ABF7E020FE168000D171F8 /* PropertyBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyBindingViewController.swift; sourceTree = "<group>"; };
 		C5ABF7E320FE168000D171F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5ABF7E520FE168000D171F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5ABF7E820FE168000D171F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5ABF7EA20FE168000D171F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBindingViewController.swift; sourceTree = "<group>"; };
+		C5ABF7F220FF68DE00D171F8 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C5ABF7F420FF6B5300D171F8 /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				C5ABF7DE20FE168000D171F8 /* AppDelegate.swift */,
-				C5ABF7E020FE168000D171F8 /* ViewController.swift */,
 				C5ABF7F020FF14DC00D171F8 /* UIBindingViewController.swift */,
+				C5ABF7F420FF6B5300D171F8 /* RxTableViewController.swift */,
+				C5ABF7E020FE168000D171F8 /* PropertyBindingViewController.swift */,
 				C5ABF7E220FE168000D171F8 /* Main.storyboard */,
+				C5ABF7F220FF68DE00D171F8 /* Food.swift */,
 				C5ABF7E520FE168000D171F8 /* Assets.xcassets */,
 				C5ABF7E720FE168000D171F8 /* LaunchScreen.storyboard */,
 				C5ABF7EA20FE168000D171F8 /* Info.plist */,
@@ -205,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5ABF7E120FE168000D171F8 /* ViewController.swift in Sources */,
+				C5ABF7E120FE168000D171F8 /* PropertyBindingViewController.swift in Sources */,
+				C5ABF7F320FF68DE00D171F8 /* Food.swift in Sources */,
 				C5ABF7F120FF14DC00D171F8 /* UIBindingViewController.swift in Sources */,
+				C5ABF7F520FF6B5300D171F8 /* RxTableViewController.swift in Sources */,
 				C5ABF7DF20FE168000D171F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
