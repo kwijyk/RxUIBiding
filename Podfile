@@ -8,5 +8,6 @@ target 'RxBindUI' do
   # Pods for RxBindUI
 	pod 'RxSwift',    '~> 4.0'
    	pod 'RxCocoa',    '~> 4.0'
+    pod 'RxDataSources', '~> 3.0'
 	
 end

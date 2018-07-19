@@ -33,6 +33,4 @@ class RxTableViewController: UIViewController {
         }).disposed(by: disposedBag)
        
     }
-
- 
 }
