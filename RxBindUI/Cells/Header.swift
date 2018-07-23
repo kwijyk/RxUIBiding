@@ -9,6 +9,6 @@
 import UIKit
 
 class Header: UICollectionReusableView {
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
 }

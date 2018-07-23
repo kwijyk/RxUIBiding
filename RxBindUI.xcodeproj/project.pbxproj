@@ -19,6 +19,7 @@
 		C5ABF7F72100AE0A00D171F8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F62100AE0A00D171F8 /* CollectionViewCell.swift */; };
 		C5ABF7F92100AE2F00D171F8 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7F82100AE2F00D171F8 /* Header.swift */; };
 		C5ABF8002100B78B00D171F8 /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF7FF2100B78B00D171F8 /* RxCollectionViewController.swift */; };
+		C5ABF8032102189A00D171F8 /* SectionModelFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABF8022102189A00D171F8 /* SectionModelFood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C5ABF7F62100AE0A00D171F8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C5ABF7F82100AE2F00D171F8 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		C5ABF7FF2100B78B00D171F8 /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
+		C5ABF8022102189A00D171F8 /* SectionModelFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModelFood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ABF7F220FF68DE00D171F8 /* Food.swift */,
+				C5ABF8022102189A00D171F8 /* SectionModelFood.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				C5ABF8002100B78B00D171F8 /* RxCollectionViewController.swift in Sources */,
 				C5ABF7E120FE168000D171F8 /* PropertyBindingViewController.swift in Sources */,
+				C5ABF8032102189A00D171F8 /* SectionModelFood.swift in Sources */,
 				C5ABF7F320FF68DE00D171F8 /* Food.swift in Sources */,
 				C5ABF7F72100AE0A00D171F8 /* CollectionViewCell.swift in Sources */,
 				C5ABF7F92100AE2F00D171F8 /* Header.swift in Sources */,
